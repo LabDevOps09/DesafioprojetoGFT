@@ -101,3 +101,67 @@ O programa pedirá para que o usuário insira a quantidade de vitórias e derrot
 
 #### Resultado:
 - O programa é flexível e funciona para qualquer valor de XP informado pelo usuário, exibindo sempre a categoria correta de nível.
+
+# 3️⃣ Desafio Escrevendo as classes de um Jogo
+
+**O Que deve ser utilizado**
+
+- Variáveis
+- Operadores
+- Laços de repetição
+- Estruturas de decisões
+- Funções
+- Classes e Objetos
+
+## Objetivo:
+
+Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
+
+- nome
+- idade
+- tipo (ex: guerreiro, mago, monge, ninja )
+
+além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
+
+- exibir a mensagem: "o {tipo} atacou usando {ataque}")
+- aonde o {tipo} deve ser concatenando o tipo que está na propriedade da classe
+- e no {ataque} deve seguir uma descrição diferente conforme o tipo, seguindo a tabela abaixo:
+
+se mago -> no ataque exibir (usou magia)
+se guerreiro -> no ataque exibir (usou espada)
+se monge -> no ataque exibir (usou artes marciais)
+se ninja -> no ataque exibir (usou shuriken)
+
+## Saída
+
+Ao final deve se exibir uma mensagem:
+
+- "o {tipo} atacou usando {ataque}"
+  ex: mago atacou usando magia
+  guerreiro atacou usando espada
+
+  ## 📝 Explicação do Código
+
+### 🔧 Construtor (`__init__`):
+- Recebe `nome`, `idade` e `tipo` e define essas propriedades para cada instância do herói.
+
+### ⚔️ Método `atacar`:
+- Define um dicionário `ataques` que mapeia cada tipo de herói para uma descrição de ataque específica. Em seguida:
+  - 🧩 **Busca a descrição do ataque** com base no `tipo` do herói usando o método `get`.
+  - 📢 **Exibe a mensagem** formatada com o tipo e o ataque, conforme especificado.
+
+### 💡 Exemplos de uso:
+- Criamos instâncias para quatro heróis com tipos diferentes e chamamos o método `atacar` para cada um.
+
+---
+
+### 🖥️ Saída Esperada
+Ao rodar este código, você verá:
+
+```python
+O mago atacou usando magia
+O guerreiro atacou usando espada
+O monge atacou usando artes marciais
+O ninja atacou usando shuriken
+
+ 
